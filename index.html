@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Cidadania Digital: IA e Deepfakes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Cidadania Digital</h1>
+        <p>O Impacto das Deepfakes e da Desinformação na Sociedade</p>
+        <button id="theme-toggle" class="btn-toggle">🌓 Alternar Modo</button>
+    </header>
+
+    <main class="container">
+        
+        <!-- Seção de Introdução Conceitual -->
+        <section class="card info-section">
+            <h2>O que são Deepfakes?</h2>
+            <p>Deepfakes são mídias (vídeos, imagens ou áudios) manipuladas de forma realista por algoritmos de Inteligência Artificial. Elas representam um grande desafio para a verdade e a segurança digital na atualidade.</p>
+            <h3>Como identificar mídias manipuladas:</h3>
+            <ul>
+                <li>Piscar de olhos não natural ou ausente.</li>
+                <li>Falhas e borrões nas bordas do rosto ou cabelos.</li>
+                <li>Incompatibilidade entre o movimento dos lábios e o áudio.</li>
+                <li>Iluminação e sombras inconsistentes no cenário.</li>
+            </ul>
+        </section>
+
+        <!-- Seção Interativa: Quiz Anti-Desinformação -->
+        <section class="card quiz-section">
+            <h2>Quiz Anti-Desinformação</h2>
+            <p>Teste sua habilidade em identificar conteúdos falsos na rede!</p>
+            
+            <form id="quiz-form">
+                <!-- Pergunta 1 -->
+                <div class="quiz-group">
+                    <label class="quiz-question">1. Se um vídeo de uma figura pública parece real, mas ela diz algo absurdo e inédito, o que você deve fazer?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="errado" required> Compartilhar imediatamente para alertar os amigos.</label>
+                        <label><input type="radio" name="q1" value="certo"> Desconfiar, checar portais de notícias confiáveis e não repassar.</label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 2 -->
+                <div class="quiz-group">
+                    <label class="quiz-question">2. Qual tecnologia de IA é a principal responsável pela criação de deepfakes realistas?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="certo" required> Redes Adversárias Generativas (GANs).</label>
+                        <label><input type="radio" name="q2" value="errado"> Calculadoras científicas automatizadas.</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Respostas</button>
+            </form>
+
+            <!-- Container dinâmico para o resultado via JavaScript -->
+            <div id="quiz-result" class="result-box hidden"></div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Portal de Conscientização Comunitária. Desenvolvido para fins educacionais.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
